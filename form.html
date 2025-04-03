@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 20px;
+            padding: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <form action="data base not set yet" method="post" enctype="application/x-www-form-urlencoded" target="_self" autocomplete="on">
+        <div>
+            <label for="FNAME">F-NAME:</label>
+            <input type="text" name="F-NAME" id="F-NAME" required value="LN">
+        </div>
+        <div>
+            <label for="L-NAME">L-NAME:</label>
+            <input type="text" name="L-NAME" id="L-NAME" required value="WALKER">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="Enter your password here" required minlength="6">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="tel">Phone Number:</label>
+            <input type="tel" name="tel" id="tel" required value="7302264304" placeholder="6395717105" pattern="[0-9]{10}">
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="0" max="200" value="22">
+        </div>
+        <div>
+            <label for="volume">Volume:</label>
+            <input type="range" name="volume" id="volume" min="0" max="100" step="5">
+        </div>
+        <div>
+            <label>Select Your Skills:</label>
+            <input type="checkbox" value="HTML" name="skills" id="skills">
+            <label for="skills">HTML</label>
+            <input type="checkbox" value="CSS" name="css" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" value="JS" id="js" name="js">
+            <label for="js">JS</label>
+            <input type="checkbox" value="REACT" id="react" name="react">
+            <label for="react">REACT</label>
+        </div>
+        <div>
+            <label>SELECT YOUR GENDER</label>
+            <input type="radio" name="GENDER" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="GENDER" value="female" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="GENDER" id="other" value="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <label for="file">Upload your Resume</label>
+            <input type="file" name="file" id="file">
+        </div>
+        <div>
+            <label for="DOB">DOB:</label>
+            <input type="date" id="DOB" name="DOB">
+        </div>
+        <div>
+            <select name="country" id="id" required>
+                <option value="">SELECT YOUR COUNTRY</option>
+                <option value="IN">India</option>
+                <option value="US">USA</option>
+                <option value="PK">Pakistan</option>
+                <option value="OT">Other</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="textarea" id="textarea" cols="20" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="submit" name="button" id="button">
+        </div>
+    </form>
+    <a href="./table.html" target="_self">Click here for the table</a>
+</body>
+</html>
